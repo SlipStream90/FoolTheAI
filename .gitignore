@@ -1,0 +1,114 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+.env
+pip-wheel-metadata/
+*.egg-info/
+dist/
+build/
+
+# --- Streamlit / Torch / ML caches (can be GBs) ---
+.streamlit/secrets.toml
+.cache/
+torch_cache/
+.torch/
+hub/
+checkpoints/
+runs/
+wandb/
+mlruns/
+lightning_logs/
+
+# --- Model weights & datasets (large files — re-downloaded, never commit) ---
+*.pt
+*.pth
+*.bin
+*.onnx
+*.h5
+*.hdf5
+*.ckpt
+*.safetensors
+*.pkl
+*.pickle
+*.joblib
+*.dill
+*.npy
+*.npz
+*.parquet
+*.arrow
+*.lmdb
+*.t7
+models/
+weights/
+data/
+datasets/
+dataset/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# --- Large media (raw captures, exports, videos, audio) ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.mp3
+*.wav
+*.flac
+*.ogg
+*.psd
+*.ai
+*.sketch
+*.fig
+*.blend
+*.fbx
+*.obj
+*.stl
+*.sqlite
+*.sqlite3
+*.db
+*.mdb
+*.iso
+*.dmg
+*.exe
+*.dll
+*.pdf-large
+
+# --- Temp / OS / IDE ---
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.code-workspace
+.spyderproject
+.ropeproject
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Keep bundled offline presets (small <1MB jpgs) ---
+# NOTE: git cannot ignore by file SIZE, only by pattern.
+# The rules above block common large-file extensions while
+# explicitly keeping the small preset images the app needs offline.
+!assets/presets/*.jpg
+!assets/presets/*.jpeg
+!assets/presets/*.png
+assets/presets/*.tmp
